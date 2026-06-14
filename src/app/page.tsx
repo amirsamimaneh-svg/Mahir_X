@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
+import { ChartPreview } from "@/components/chart-preview";
 import { Features } from "@/components/features";
 import { HowItWorks } from "@/components/how-it-works";
 import { Pricing } from "@/components/pricing";
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <ChartPreview />
         <Features />
         <HowItWorks />
         <Pricing />
