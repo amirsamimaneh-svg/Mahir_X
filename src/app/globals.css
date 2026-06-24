@@ -56,12 +56,16 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Vazirmatn", var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--bg);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
 }
+
+/* ── Admin specific ── */
+.admin-ltr { direction: ltr; font-family: "JetBrains Mono", "Fira Code", monospace; }
 
 /* ── Layout ── */
 .container   { width: min(1200px, 92vw); margin-inline: auto; }

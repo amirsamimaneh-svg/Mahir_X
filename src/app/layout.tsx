@@ -11,9 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mahir X — AI Crypto Trading Terminal",
+  title: "Mahir X — هوش مصنوعی معاملات کریپتو",
   description:
-    "Professional AI-powered crypto trading terminal. Real-time signals, multi-agent analysis, whale tracking, and personalized trading intelligence.",
+    "پلتفرم حرفه‌ای معاملات کریپتو با هوش مصنوعی. سیگنال‌های لحظه‌ای، تحلیل چندعاملی، ردیابی نهنگ‌ها و هوش تطبیقی.",
 };
 
 export const viewport: Viewport = {
@@ -26,7 +26,12 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={inter.variable}>
+    <html lang="fa" dir="rtl" suppressHydrationWarning className={inter.variable}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+      </head>
       <body className="antialiased">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <LanguageProvider>
