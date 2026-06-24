@@ -253,6 +253,42 @@ body {
   to   { opacity: 1; transform: none; }
 }
 
+/* ── Light Mode ── */
+html.light {
+  --bg:       #F0F4FF;
+  --bg2:      #E8EDF8;
+  --surface:  #FFFFFF;
+  --surface2: #F5F7FF;
+  --surface3: #EDF0FA;
+  --brand:       #6C5CE7;
+  --brand-light: #8B7CF8;
+  --brand-dark:  #5A4BD6;
+  --brand-glow:  rgba(108, 92, 231, 0.12);
+  --accent:      #0095CC;
+  --accent-dim:  rgba(0, 149, 204, 0.1);
+  --accent-glow: rgba(0, 149, 204, 0.15);
+  --bull:     #00A87A;
+  --bull-dim: rgba(0, 168, 122, 0.1);
+  --bear:     #E0302E;
+  --bear-dim: rgba(224, 48, 46, 0.1);
+  --neon:     #0095CC;
+  --neon-dim: rgba(0, 149, 204, 0.08);
+  --text:  #0F172A;
+  --text2: #475569;
+  --text3: #94A3B8;
+  --border:  #D1D9F0;
+  --border2: #B8C4E0;
+  --shadow-sm:    0 2px 8px  rgba(0, 0, 0, 0.08);
+  --shadow-md:    0 4px 24px rgba(0, 0, 0, 0.12);
+  --shadow-lg:    0 8px 48px rgba(0, 0, 0, 0.16);
+  --shadow-brand: 0 4px 24px rgba(108, 92, 231, 0.25);
+  --shadow-neon:  0 0 32px   rgba(0, 149, 204, 0.18);
+}
+
+/* ── RTL Support (Farsi) ── */
+html[dir="rtl"] body { font-family: "Vazirmatn", var(--font-inter), sans-serif; }
+html[dir="rtl"] .container { direction: rtl; }
+
 /* ── Divider ── */
 .divider { height: 1px; background: var(--border); }
 
